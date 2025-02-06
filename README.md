@@ -72,7 +72,7 @@ Then deploy the project by running:
 
 `docker compose up --build`
 
-The platform should then be accessible on `https://{domain}:3100/ai4edu/`.
+The platform should then be accessible on `https://{domain}:3100/ai4edu/` even after disconnecting from the server host.
 
 If server issues occur, check if the screen session is still active by running:
 
