@@ -62,4 +62,22 @@ Finally make sure that the http server listens to the correct frontend port:
 
 ## 3. Deploying
 
-Run `docker compose up --build` to run the project and it should be accessible on `https://{domain}:3100/ai4edu/`.
+If logged in to the server host via ssh, you should keep the server running after disconnecting by running it in a screen session.
+
+To create a new screen session, run:
+
+`screen -S {session name}`
+
+Then deploy the project by running:
+
+`docker compose up --build`
+
+The platform should then be accessible on `https://{domain}:3100/ai4edu/`.
+
+If server issues occur, check if the screen session is still active by running:
+
+`screen -ls`
+
+If it is, you can inspect the server issues by resuming the screen session:
+
+`screen -r {session name}`
